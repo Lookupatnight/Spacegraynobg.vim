@@ -2,6 +2,7 @@
 
 [Spacegray.vim](https://github.com/ajh17/spacegray) is a colorscheme for Vim loosely modeled after
 the [spacegray](https://github.com/zdne/spacegray-xcode) theme for Xcode.
+
 Spacegraynobg only deletes all background color settings so as to not interefere with tmux background settings.
 
 ## Options
