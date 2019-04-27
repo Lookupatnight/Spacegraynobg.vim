@@ -43,7 +43,7 @@ let g:terminal_ansi_colors = [
             \ ]
 
 set background=dark
-let colors_name = 'spacegray'
+let colors_name = 'spacegraynobg'
 
 " Colorscheme definitions {{{1
 if g:spacegray_low_contrast
