@@ -1,6 +1,6 @@
-# Spacegray.vim
+# Spacegraynobg.vim
 
-Spacegray is a colorscheme for Vim loosely modeled after
+[Spacegray.vim](https://github.com/ajh17/spacegray) is a colorscheme for Vim loosely modeled after
 the [spacegray](https://github.com/zdne/spacegray-xcode) theme for Xcode.
 
 ## Options
@@ -38,11 +38,11 @@ You can tweak Spacegray by enabling the following disabled options:
 
 If you use Vim 8 or better, simply copy and paste:
 
-    git clone git://github.com/ajh17/Spacegray.vim ~/.vim/pack/vendor/start/Spacegray
+    git clone git://github.com/lookupatnight/Spacegraynobg.vim ~/.vim/pack/vendor/start/Spacegraynobg
 
 Then in your ~/.vimrc, add this line:
 
-    colorscheme spacegray
+    colo spacegraynobg
 
 ## Terminal Environment
 
