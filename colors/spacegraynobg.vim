@@ -1,7 +1,7 @@
-" SpaceGray.vim -- Vim colorscheme.
-" Maintainer: Akshay Hegde (github.com/ajh17)
-" Version: 1.4
-" A colorscheme loosely modeled after the spacegray theme for Xcode.
+" spacegraynobg.vim -- Vim colorscheme.
+" Maintainer: Lookupatnight (github.com/lookupatnight)
+" Version: 1.1
+" A colorscheme based on spacegray.vim which is loosely modeled after the spacegray theme for Xcode.
 " This colorscheme is 256color and up only.
 
 " Setup {{{1
@@ -61,14 +61,14 @@ else
 endif
 
 hi Conceal          ctermfg=250    guibg=NONE     guifg=#B3B8C4  cterm=NONE      gui=NONE
-hi NonText          ctermfg=8      guibg=NONE     guifg=#3E4853  cterm=NONE      gui=NONE
+hi NonText          ctermfg=8      ctermbg=NONE   guifg=#808080  guibg=NONE      gui=NONE cterm=NONE
 hi Title            ctermfg=250    guibg=NONE     guifg=#B3B8C4  cterm=bold      gui=bold
 hi Constant         ctermfg=130    guibg=NONE     guifg=#C5735E  cterm=NONE      gui=NONE
 hi Function         ctermfg=9      guibg=NONE     guifg=#CC6666  cterm=NONE      gui=NONE
 hi Identifier       ctermfg=179    guibg=NONE     guifg=#E5C078  cterm=NONE      gui=NONE
 hi PreProc          ctermfg=109    guibg=NONE     guifg=#85A7A5  cterm=NONE      gui=NONE
 hi Special          ctermfg=103    guibg=NONE     guifg=#7D8FA3  cterm=NONE      gui=NONE
-hi SpecialKey       ctermfg=59     guibg=NONE     guifg=#4C5966  cterm=NONE      gui=NONE
+hi SpecialKey       ctermfg=59     ctermbg=240    guibg=#A8A8A8  guifg=#4C5966  cterm=NONE      gui=NONE
 hi Statement        ctermfg=13     guibg=NONE     guifg=#A57A9E  cterm=NONE      gui=NONE
 hi String           ctermfg=107    guibg=NONE     guifg=#95B47B  cterm=NONE      gui=NONE
 hi Type             ctermfg=179    guibg=NONE     guifg=#E5C078  cterm=NONE      gui=NONE
@@ -76,12 +76,13 @@ hi Type             ctermfg=179    guibg=NONE     guifg=#E5C078  cterm=NONE     
 hi Cursor           ctermfg=NONE   guibg=#6C6C6C  guifg=NONE     cterm=NONE      gui=NONE
 hi CursorColumn     ctermfg=NONE   guibg=#303030  guifg=NONE     cterm=NONE      gui=NONE
 hi CursorLine       ctermfg=NONE   guibg=#303030  guifg=NONE     cterm=NONE      gui=NONE
-hi ColorColumn      ctermfg=NONE   guibg=#303537  guifg=NONE     cterm=NONE      gui=NONE
+hi ColorColumn      ctermfg=NONE   ctermbg=233 guibg=#121212  guifg=NONE     cterm=NONE      gui=NONE
 hi SignColumn       ctermfg=250    guibg=#141617  guifg=#B3B8C4  cterm=NONE      gui=NONE
 
-hi Todo             ctermfg=NONE   guibg=NONE     guifg=NONE     cterm=reverse   gui=reverse
-hi Error            ctermfg=12     guibg=NONE     guifg=#AF5F5F  cterm=underline gui=reverse
-hi ErrorMsg         ctermfg=9      guibg=NONE     guifg=#C5735E  cterm=NONE      gui=NONE
+" For Todo, bg and fg variables are the wrong way around for some reason
+hi Todo             ctermbg=0      ctermfg=138    guibg=#000000  guifg=#AF8787
+hi Error            ctermfg=255    ctermbg=239    guifg=#EEEEEE  guibg=#4E4E4E
+hi ErrorMsg         term=NONE      ctermfg=0      ctermbg=130    guibg=#800000   guifg=#000000
 hi Question         ctermfg=214    guibg=NONE     guifg=#FFAF00  cterm=NONE      gui=NONE
 hi ModeMsg          ctermfg=249    guibg=NONE     guifg=#808080  cterm=NONE      gui=NONE
 hi MoreMsg          ctermfg=249    guibg=NONE     guifg=#808080  cterm=NONE      gui=NONE
@@ -138,12 +139,8 @@ hi Folded           ctermfg=242    guibg=#1C1C1C  guifg=#6C6C6C  cterm=NONE     
 
 hi VertSplit        ctermfg=232    guibg=#1C1F20  guifg=#1C1F20  cterm=NONE      gui=NONE
 
-hi IncSearch        ctermfg=0      guibg=#AF5F5F  guifg=#141617  cterm=NONE      gui=NONE
-if g:spacegray_underline_search
-  hi Search         ctermfg=NONE   guibg=NONE     guifg=NONE     cterm=underline,bold gui=underline,bold
-else
-  hi Search         ctermfg=232    guibg=#919652  guifg=#141617  cterm=NONE      gui=NONE
-endif
+hi IncSearch        ctermfg=0      ctermbg=130    guibg=#AF5F00  guifg=#000000
+hi Search           ctermfg=0      ctermbg=130    guibg=#AF5F00  guifg=#000000
 
 hi TabLine          ctermfg=249    guibg=#141617  guifg=#B3B8C4  cterm=NONE      gui=NONE
 hi TabLineFill      ctermfg=239    guibg=#303537  guifg=#303537  cterm=NONE      gui=NONE
